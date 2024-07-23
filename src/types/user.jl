@@ -19,7 +19,8 @@ struct User <: DiscordObject
     locale::Optional{String}
     verified::Optional{Bool}
     email::OptionalNullable{String}
-    premium_type::OptionalNullable{Integer}
-    public_flags::OptionalNullable{Integer}
+    flags::Optional{Integer}
+    premium_type::Optional{Integer}
+    public_flags::Optional{Integer}
 end
 @boilerplate User :constructors :docs :lower :merge :mock
