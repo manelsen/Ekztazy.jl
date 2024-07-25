@@ -22,5 +22,6 @@ struct User <: DiscordObject
     flags::Optional{Int}
     premium_type::Optional{Int}
     public_flags::Optional{Int}
+    avatar_decoration_data::OptionalNullable{AvatarDecoration}
 end
 @boilerplate User :constructors :docs :lower :merge :mock
