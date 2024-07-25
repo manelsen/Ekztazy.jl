@@ -15,12 +15,12 @@ struct User <: DiscordObject
     system::Optional{Bool}
     mfa_enabled::Optional{Bool}
     banner::OptionalNullable{String}
-    accent_color::OptionalNullable{Integer}
+    accent_color::OptionalNullable{Int}
     locale::Optional{String}
     verified::Optional{Bool}
     email::OptionalNullable{String}
-    flags::Optional{Integer}
-    premium_type::Optional{Integer}
-    public_flags::Optional{Integer}
+    flags::Optional{Int}
+    premium_type::Optional{Int}
+    public_flags::Optional{Int}
 end
 @boilerplate User :constructors :docs :lower :merge :mock
