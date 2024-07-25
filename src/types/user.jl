@@ -7,10 +7,10 @@ More details [here](https://discordapp.com/developers/docs/resources/user#user-o
 struct User <: DiscordObject
     id::Snowflake
     # The User inside of a Presence only needs its ID set.
-    username::Optional{String}
-    discriminator::Optional{String}
-    global_name::OptionalNullable{String}
-    avatar::OptionalNullable{String}
+    username::String
+    discriminator::String
+    global_name::Nullable{String}
+    avatar::Nullable{String}
     bot::Optional{Bool}
     system::Optional{Bool}
     mfa_enabled::Optional{Bool}
