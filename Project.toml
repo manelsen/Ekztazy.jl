@@ -18,7 +18,7 @@ TimeToLive = "37f0c46e-897f-50ef-b453-b26c3eed3d6c"
 
 [compat]
 Documenter = "0.27"
-HTTP = "0.9"
+HTTP = "1.10"
 JSON3 = "1.9"
 LRUCache = "1"
 OpenTrick = "0.2"
